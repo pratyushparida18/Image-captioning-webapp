@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.image-uploader-container {
+  margin-top: 2%;
+}
+
+#main{
+  margin-top: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  text-align: center;
+}
+
+
+.upload-image-button {
+  margin-bottom: 7vh;
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.alternate-caption-button{
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.close-button{
+  margin-bottom: 7vh;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.green-box {
+  background-color: #9acca4;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.captions-container {
+  background-color: #d7ebdb; /* Add your desired color here */
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 28px;
+  width: 500px;
+}
+
