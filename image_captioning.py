@@ -8,7 +8,6 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-# Configure CORS settings
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3000"],  # Add the origin of your React app
@@ -22,13 +21,10 @@ async def image_to_text_model1(file: UploadFile):
     model_id = "nlpconnect/vit-gpt2-image-captioning"
     image_to_text = pipeline("image-to-text", model=model_id)
     
-    # Read the file content as bytes
     file_content = await file.read()
     
-    # Convert the bytes to a PIL image
     pil_image = Image.open(BytesIO(file_content))
     
-    # Perform image-to-text processing
     result = image_to_text(pil_image)
     
     return result[0]["generated_text"]
@@ -38,13 +34,10 @@ async def image_to_text_model2(file: UploadFile):
     model_id = "Salesforce/blip-image-captioning-base"
     image_to_text = pipeline("image-to-text", model=model_id)
     
-    # Read the file content as bytes
     file_content = await file.read()
     
-    # Convert the bytes to a PIL image
     pil_image = Image.open(BytesIO(file_content))
     
-    # Perform image-to-text processing
     result = image_to_text(pil_image)
     
     return result[0]["generated_text"]
@@ -54,13 +47,10 @@ async def image_to_text_model3(file: UploadFile):
     model_id = "Salesforce/blip-image-captioning-large"
     image_to_text = pipeline("image-to-text", model=model_id)
     
-    # Read the file content as bytes
     file_content = await file.read()
     
-    # Convert the bytes to a PIL image
     pil_image = Image.open(BytesIO(file_content))
     
-    # Perform image-to-text processing
     result = image_to_text(pil_image)
     
     return result[0]["generated_text"]
