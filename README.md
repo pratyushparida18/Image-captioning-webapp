@@ -11,3 +11,12 @@ Follow these steps to start the server and the web application:
 ```bash
 python -m uvicorn image_captioning:app --reload
 ```
+### Start the Web Application
+
+```bash
+npm init
+```
+###Technologies Used
+- Hugging Face
+- React
+- FastAPI
