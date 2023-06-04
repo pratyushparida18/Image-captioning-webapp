@@ -51,7 +51,7 @@ async def image_to_text_model2(file: UploadFile):
 
 @app.post("/model3")
 async def image_to_text_model3(file: UploadFile):
-    model_id = "ydshieh/vit-gpt2-coco-en"
+    model_id = "Salesforce/blip-image-captioning-large"
     image_to_text = pipeline("image-to-text", model=model_id)
     
     # Read the file content as bytes
