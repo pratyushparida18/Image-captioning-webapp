@@ -16,7 +16,7 @@ python -m uvicorn image_captioning:app --reload
 ```bash
 npm init
 ```
-###Technologies Used
+### Technologies Used
 - Hugging Face
 - React
 - FastAPI
